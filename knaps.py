@@ -14,17 +14,21 @@ from sklearn.datasets import make_classification
 from sklearn.svm import SVC
 
 st.write(""" 
-# Cek data
+# Data Mining
 """)
+
+st.write("Amallia Tiara Putri-200411100025")
 
 st.write("=========================================================================")
 
 tab1, tab2, tab3, tab4, tab5= st.tabs(["Import Data", "Preprocessing", "Modelling", "Evalutions", "Logout"])
 
 with tab1:
-    st.write("Import Data")
-    data = pd.read_csv("https://raw.githubusercontent.com/Feb11F/dataset/main/credit_score.csv")
-    st.dataframe(data)
+   uploaded_files = st.file_uploader("Choose a CSV file", accept_multiple_files=True)
+   for uploaded_file in uploaded_files:
+    bytes_data = uploaded_file.read()
+    st.write("filename:", uploaded_file.name)
+    st.write(bytes_data)
 
 with tab2:
     data.head()
