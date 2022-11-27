@@ -19,7 +19,7 @@ st.write("""
 
 st.write("=========================================================================")
 
-tab1, tab2, tab3, tab4 = st.tabs(["Import Data", "Preprocessing", "Modelling", "Evalutions"])
+tab1, tab2, tab3, tab4, tab5= st.tabs(["Import Data", "Preprocessing", "Modelling", "Evalutions", "Logout"])
 
 with tab1:
     st.write("Import Data")
