@@ -59,7 +59,6 @@ with preporcessing :
     st.write("""# Preprocessing""")
     st.subheader("""Normalisasi Data""")
     st.write("""Rumus Normalisasi Data :""")
-    st.image('https://i.stack.imgur.com/EuitP.png', use_column_width=False, width=250)
     st.markdown("""
     Dimana :
     - X = data yang akan dinormalisasi atau data asli
